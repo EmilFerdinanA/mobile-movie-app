@@ -16,3 +16,9 @@ export const getMovies = async ({
   const response = await httpClient.get(url);
   return response.data;
 };
+
+export const getTrendingMovies = async (): Promise<any> => {
+  const url = "https://api.themoviedb.org/3/movie/popular";
+  const response = await httpClient.get(url);
+  return response.data.results.slice(0, 10);
+};
