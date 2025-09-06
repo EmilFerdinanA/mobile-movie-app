@@ -17,7 +17,7 @@ const Search = () => {
 
   return (
     <View className="flex-1 bg-primary">
-      <Image source={images.bg} className="flex-1 absolute q-full z-0" />
+      <Image source={images.bg} className="flex-1 absolute w-full z-0" />
 
       <FlatList
         data={data?.results}
